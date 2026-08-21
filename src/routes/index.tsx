@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import bottle from "@/assets/monarch-bottle.png";
+import bottle from "@/assets/monarch-bottle.webp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -76,9 +76,9 @@ function Monarch() {
           <img
             src={bottle}
             alt="Monarch by Sarkar — emerald chess-king 100ml parfum bottle with the Sarkar wordmark on the base"
-            width={1024}
-            height={1024}
-            className="w-full object-contain"
+            width={760}
+            height={760}
+            className="w-full object-contain" fetchPriority="high" decoding="async" loading="eager"
           />
           <p className="eyebrow -mt-2 text-center text-neutral-500">
             100 ML · Parfum
