@@ -17,6 +17,9 @@ export const Route = createFileRoute("/")({
           "Saffron, incense and oud at 25% oil concentration. Monarch — the quietest kind of power, from the house of Sarkar.",
       },
     ],
+    links: [
+      { rel: "preload", as: "image", href: bottle, fetchpriority: "high" },
+    ],
   }),
   component: Monarch,
 });
