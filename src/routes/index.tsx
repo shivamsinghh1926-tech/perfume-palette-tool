@@ -68,7 +68,11 @@ function Monarch() {
       </header>
 
       <section className="mx-auto grid max-w-6xl gap-16 px-6 py-16 md:grid-cols-2 md:py-24">
-        <div className="bg-canvas p-6" style={{ boxShadow: "var(--shadow-shelf)" }}>
+        <div
+          className="p-6"
+          style={{ backgroundColor: "var(--canvas)", boxShadow: "var(--shadow-shelf)" }}
+        >
+
           <img
             src={bottle}
             alt="Monarch by Sarkar — emerald chess-king 100ml parfum bottle with the Sarkar wordmark on the base"
