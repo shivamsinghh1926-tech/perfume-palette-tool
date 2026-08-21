@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import bottle from "@/assets/monarch-bottle.jpg";
+import bottle from "@/assets/monarch-bottle.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -68,20 +68,24 @@ function Monarch() {
       </header>
 
       <section className="mx-auto grid max-w-6xl gap-16 px-6 py-16 md:grid-cols-2 md:py-24">
-        <div className="relative">
-          <div
-            className="absolute inset-0 -z-10 blur-3xl opacity-40"
-            style={{ backgroundImage: "var(--gradient-veil)" }}
-          />
+        <div
+          className="p-6"
+          style={{ backgroundColor: "var(--canvas)", boxShadow: "var(--shadow-shelf)" }}
+        >
+
           <img
             src={bottle}
-            alt="Monarch by Sarkar — matte black 100ml parfum bottle with antique gold cap"
-            width={1200}
-            height={1504}
-            className="w-full object-cover"
-            style={{ boxShadow: "var(--shadow-shelf)" }}
+            alt="Monarch by Sarkar — emerald chess-king 100ml parfum bottle with the Sarkar wordmark on the base"
+            width={1024}
+            height={1024}
+            className="w-full object-contain"
           />
+          <p className="eyebrow -mt-2 text-center text-neutral-500">
+            100 ML · Parfum
+          </p>
         </div>
+
+
 
         <div className="flex flex-col justify-center">
           <p className="eyebrow">The Fifth Expression</p>
