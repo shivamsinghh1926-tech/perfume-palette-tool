@@ -68,20 +68,19 @@ function Monarch() {
       </header>
 
       <section className="mx-auto grid max-w-6xl gap-16 px-6 py-16 md:grid-cols-2 md:py-24">
-        <div className="relative">
-          <div
-            className="absolute inset-0 -z-10 blur-3xl opacity-40"
-            style={{ backgroundImage: "var(--gradient-veil)" }}
-          />
+        <div className="relative bg-canvas p-6" style={{ boxShadow: "var(--shadow-shelf)" }}>
           <img
             src={bottle}
-            alt="Monarch by Sarkar — matte black 100ml parfum bottle with antique gold cap"
-            width={1200}
-            height={1504}
-            className="w-full object-cover"
-            style={{ boxShadow: "var(--shadow-shelf)" }}
+            alt="Monarch by Sarkar — emerald chess-king 100ml parfum bottle with the Sarkar wordmark on the base"
+            width={1024}
+            height={1024}
+            className="w-full object-contain"
           />
+          <span className="absolute bottom-6 left-6 eyebrow text-primary-foreground/70">
+            100 ML · Parfum
+          </span>
         </div>
+
 
         <div className="flex flex-col justify-center">
           <p className="eyebrow">The Fifth Expression</p>
