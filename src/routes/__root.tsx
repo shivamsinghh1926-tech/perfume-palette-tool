@@ -1,11 +1,4 @@
-import {
-  Outlet,
-  Link,
-  createRootRoute,
-  useRouter,
-  HeadContent,
-  Scripts,
-} from "@tanstack/react-router";
+import { Outlet, Link, createRootRoute, useRouter, HeadContent } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
@@ -116,8 +109,8 @@ function RootShell({ children }: { children: ReactNode }) {
         <HeadContent />
       </head>
       <body>
+        {/* The catalogue is fully server-rendered and has no client-side state. */}
         {children}
-        <Scripts />
       </body>
     </html>
   );
