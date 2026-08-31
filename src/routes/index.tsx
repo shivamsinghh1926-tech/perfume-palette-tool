@@ -54,6 +54,13 @@ const specs = [
 function Monarch() {
   return (
     <main className="min-h-screen veil">
+      <div className="border-b border-border bg-card/60">
+        <div className="mx-auto flex max-w-6xl items-center justify-center gap-3 px-6 py-2.5">
+          <span className="eyebrow text-gold">Complimentary Shipping Across India</span>
+          <span className="hidden text-muted-foreground/40 sm:inline">·</span>
+          <span className="eyebrow hidden sm:inline">25% Parfum Oil · Made In France</span>
+        </div>
+      </div>
       <header className="border-b border-border">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
           <span className="font-display text-2xl tracking-[0.5em] text-foreground">
