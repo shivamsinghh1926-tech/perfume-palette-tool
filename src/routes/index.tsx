@@ -17,7 +17,6 @@ export const Route = createFileRoute("/")({
           "Saffron, incense and oud at 25% oil concentration. Monarch — the quietest kind of power, from the house of Sarkar.",
       },
     ],
-    links: [{ rel: "preload", as: "image", href: bottle, fetchPriority: "high" }],
   }),
   component: Monarch,
 });
@@ -85,7 +84,10 @@ function Monarch() {
             height={760}
             className="w-full object-contain"
             fetchPriority="high"
-            decoding="async"
+            // This is the above-the-fold LCP image. Synchronous decoding lets the
+            // browser paint it as soon as its small source file has arrived rather
+            // than scheduling its decode behind later work.
+            decoding="sync"
             loading="eager"
           />
           <p className="eyebrow -mt-2 text-center text-neutral-500">100 ML · Parfum</p>
