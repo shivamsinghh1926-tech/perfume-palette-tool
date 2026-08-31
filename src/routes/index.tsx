@@ -17,9 +17,7 @@ export const Route = createFileRoute("/")({
           "Saffron, incense and oud at 25% oil concentration. Monarch — the quietest kind of power, from the house of Sarkar.",
       },
     ],
-    links: [
-      { rel: "preload", as: "image", href: bottle, fetchpriority: "high" },
-    ],
+    links: [{ rel: "preload", as: "image", href: bottle, fetchPriority: "high" }],
   }),
   component: Monarch,
 });
@@ -56,16 +54,14 @@ function Monarch() {
     <main className="min-h-screen veil">
       <div className="border-b border-border bg-card/60">
         <div className="mx-auto flex max-w-6xl items-center justify-center gap-3 px-6 py-2.5">
-          <span className="eyebrow text-gold">Complimentary Shipping Across India</span>
-          <span className="hidden text-muted-foreground/40 sm:inline">·</span>
-          <span className="eyebrow hidden sm:inline">25% Parfum Oil · Made In France</span>
+          <span className="eyebrow text-gold">
+            Complimentary Shipping Across India · 25% Parfum Oil · Made In France
+          </span>
         </div>
       </div>
       <header className="border-b border-border">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-          <span className="font-display text-2xl tracking-[0.5em] text-foreground">
-            SARKAR
-          </span>
+          <span className="font-display text-2xl tracking-[0.5em] text-foreground">SARKAR</span>
           <nav className="hidden gap-10 md:flex">
             {["Orion", "Noble", "Throne", "Regal"].map((n) => (
               <span key={n} className="eyebrow">
@@ -82,20 +78,18 @@ function Monarch() {
           className="p-6"
           style={{ backgroundColor: "var(--canvas)", boxShadow: "var(--shadow-shelf)" }}
         >
-
           <img
             src={bottle}
             alt="Monarch by Sarkar — emerald chess-king 100ml parfum bottle with the Sarkar wordmark on the base"
             width={760}
             height={760}
-            className="w-full object-contain" fetchPriority="high" decoding="async" loading="eager"
+            className="w-full object-contain"
+            fetchPriority="high"
+            decoding="async"
+            loading="eager"
           />
-          <p className="eyebrow -mt-2 text-center text-neutral-500">
-            100 ML · Parfum
-          </p>
+          <p className="eyebrow -mt-2 text-center text-neutral-500">100 ML · Parfum</p>
         </div>
-
-
 
         <div className="flex flex-col justify-center">
           <p className="eyebrow">The Fifth Expression</p>
@@ -110,25 +104,19 @@ function Monarch() {
             &ldquo;A crown is never announced. It is simply worn.&rdquo;
           </p>
           <p className="mt-5 max-w-md text-sm leading-relaxed text-muted-foreground">
-            Monarch was built for the people who arrive last and are remembered
-            first. Saffron and pepper open like a hand raised for silence; oud,
-            leather and amber hold that silence for twelve hours. Twenty-five
-            percent oil. No apology.
+            Monarch was built for the people who arrive last and are remembered first. Saffron and
+            pepper open like a hand raised for silence; oud, leather and amber hold that silence for
+            twelve hours. Twenty-five percent oil. No apology.
           </p>
 
           <div className="mt-10 flex items-end gap-4">
-            <span className="font-display text-4xl text-foreground">₹ 1,699</span>
-            <span className="pb-1 text-sm text-muted-foreground line-through">
-              ₹ 2,099
-            </span>
+            <span className="font-display text-4xl text-foreground">₹ 2,099</span>
             <span className="pb-1 eyebrow text-gold">Incl. of all taxes</span>
           </div>
 
           <div className="mt-8 flex flex-wrap gap-3">
             <button className="btn-sarkar hover:btn-sarkar-hover">Add to Bag</button>
-            <button className="btn-ghost-sarkar hover:border-primary">
-              Buy Now
-            </button>
+            <button className="btn-ghost-sarkar hover:border-primary">Buy Now</button>
           </div>
         </div>
       </section>
@@ -139,9 +127,7 @@ function Monarch() {
             <article key={n.stage} className="px-2 py-6 md:px-8">
               <p className="eyebrow text-gold">{n.stage} Notes</p>
               <h2 className="mt-4 font-display text-3xl">{n.items}</h2>
-              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                {n.line}
-              </p>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{n.line}</p>
             </article>
           ))}
         </div>
@@ -169,9 +155,8 @@ function Monarch() {
           </h2>
           <div className="mx-auto mt-10 max-w-16 rule-gold" />
           <p className="mx-auto mt-10 max-w-xl text-sm leading-relaxed text-muted-foreground">
-            Five expressions. One signature. Each a parfum at 25% oil
-            concentration, made for ordinary days and the extraordinary people
-            who live them.
+            Five expressions. One signature. Each a parfum at 25% oil concentration, made for
+            ordinary days and the extraordinary people who live them.
           </p>
         </div>
       </section>
