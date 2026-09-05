@@ -83,7 +83,7 @@ function Monarch() {
         >
           <img
             src={bottle}
-            alt="Monarch by Sarkar — emerald chess-king 100ml parfum bottle with the Sarkar wordmark on the base"
+            alt="Monarch by Sarkar — deep burgundy chess-king 100ml parfum bottle with the Sarkar wordmark on the base"
             width={760}
             height={760}
             className="w-full object-contain"
