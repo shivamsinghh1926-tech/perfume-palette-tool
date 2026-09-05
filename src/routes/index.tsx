@@ -77,16 +77,13 @@ function Monarch() {
       </header>
 
       <section className="mx-auto grid max-w-6xl gap-16 px-6 py-16 md:grid-cols-2 md:py-24">
-        <div
-          className="p-6"
-          style={{ backgroundColor: "var(--canvas)", boxShadow: "var(--shadow-shelf)" }}
-        >
+        <div style={{ boxShadow: "var(--shadow-shelf)" }}>
           <img
             src={bottle}
             alt="Monarch by Sarkar — deep burgundy chess-king 100ml parfum bottle with the Sarkar wordmark on the base"
             width={760}
             height={760}
-            className="w-full object-contain"
+            className="block w-full object-cover"
             fetchPriority="high"
             // This is the above-the-fold LCP image. Synchronous decoding lets the
             // browser paint it as soon as its small source file has arrived rather
@@ -94,7 +91,6 @@ function Monarch() {
             decoding="sync"
             loading="eager"
           />
-          <p className="eyebrow -mt-2 text-center text-neutral-500">100 ML · Parfum</p>
         </div>
 
         <div className="flex flex-col justify-center">
